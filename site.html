@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+  <title>Lista de Compras</title>
+  <link rel="website icon" type="png" href="img/Icon.png" />
+</head>
+<body>
+  <header>
+    <h1>Lista de Compras Interativa</h1>
+    <button id="modo">Modo Escuro</button>
+  </header>
+
+  <main >
+    <section>
+      <h2>Gerenciar Produtos</h2>
+      <br></br>
+      <div class="inputs">
+        <input type="text" id="nome" placeholder="Nome do Produto" />
+        <input type="text" id="quantidade" placeholder="Quantidade" />
+      </div>
+      <div class="botoes">
+        <button id="Adc" type="submit">Adicionar Item</button>
+        <button id="Limpar" type="reset">Limpar Lista</button>
+        <button id="Copiar">Copiar Lista</button>
+      </div>
+      <p id="erro"></p>
+      <ul id="lista"></ul>
+    </section>
+  </main>
+
+</body>
+
+</html>
