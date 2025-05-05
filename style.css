@@ -135,6 +135,13 @@ ul#lista li {
   transition: all 0.2s;
 }
 
+ul li.riscado{
+text-decoration: line-through;
+color: gray;
+
+
+}
+
 
 
 @media (max-width: 600px) {
