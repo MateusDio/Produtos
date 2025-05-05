@@ -24,12 +24,10 @@ adc.addEventListener("click", function () {
     const nomes = nome.value.trim();
     const quants = quant.value.trim();
     const item = document.createElement("li");
-
+item.onclick = () => item.classList.toggle('riscado');
+    
     item.textContent = `${nomes} (${quants})`;
-    item.addEventListener("click", function () {
-      item.style.color = 'gray';
-      item.style.textDecoration = 'line-through';
-    });
+   
 
     lista.appendChild(item);
 
@@ -81,7 +79,7 @@ copiar.addEventListener("click", function () {
 });
 
 limpar.addEventListener("click", function () {
-  lista.textContent = '';
+  lista.innerHTML = '';
 });
 
 nome.addEventListener("click", function () {
